@@ -1,0 +1,15 @@
+{
+  "name": "vill-tailwindcss",
+  "version": "1.0.0",
+  "description": "The tailwind wrapper",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:watch": "tailwindcss -i ./styles/main.css -o ../static/css/tailwind/main.css --watch",
+    "tailwind:build": "tailwindcss -i ./styles/main.css -o ../static/css/tailwind/main.css"
+  },
+  "author": "@gabrielforster",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}
