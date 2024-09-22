@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI WebRTC Video Streaming</title>
+    <style>
+        video {
+            width: 45%;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .videos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Video Streaming with FastAPI and WebRTC</h1>
+        <button id="startButton">Start Media</button>
+        <button id="callButton" disabled>Start Call</button>
+        <button id="muteRemote" disabled>Mute remote</button>
+
+        <div class="videos">
+            <video id="localVideo" autoplay muted></video>
+            <video id="remoteVideo" autoplay></video>
+        </div>
+    </div>
+
+    <script type="module" defer src="/static/js/home.js"></script>
+</body>
+</html>
+
